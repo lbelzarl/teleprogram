@@ -19,36 +19,49 @@
     <div>
         <h1>Телепрограмма на сегодня</h1>
     </div>
-    <div class="block-menu">
-        <span>
-            <div class="wrapper">
-                <span class="days"><a href="#" data-day="Mo" class="nkjh">Пн, 20</a></span>
-                <span class="days"><a href=".Tu">Вт, 21</a></span>
-                <span class="days">Ср, 22</span>
-                <span class="days">Чт, 23</span>
-                <span class="days">Пт, 24</span>
-                <span class="days">Сб, 25</span>
-                <span class="days">Вс, 26</span>
-            </div>
-        </span>
-        <span class="tv-filter">
-            <label>
-                <input type="checkbox">Фильм</input>
-            </label>
-            <label>
-                <input type="checkbox">Сериалы</input>
-            </label>            
-            <label>
-                <input type="checkbox">Спорт</input>
-            </label>
-        </span>
+    <div>
+        <ul class="filter-days">
+            <li class="filter-days__day"><a href="#" data-day="show-monday" class="nkjh">Пн, 20</a></li>
+            <li class="filter-days__day"><a href="#" data-day="show-tuesday" class="nkjh">Вт, 21</a></li>
+            <li class="filter-days__day"><a href="#" data-day="show-wednesday" class="nkjh">Ср, 22</a></li>
+            <li class="filter-days__day"><a href="#" data-day="show-thursday" class="nkjh">Чт, 23</a></li>
+            <li class="filter-days__day"><a href="#" data-day="show-friday" class="nkjh">Пт, 24</a></li>
+            <li class="filter-days__day"><a href="#" data-day="show-saturday" class="nkjh">Сб, 25</a></li>
+            <li class="filter-days__day"><a href="#" data-day="show-sunday" class="nkjh">Вс, 26</a></li>
+        </ul>
+        <ul class="filter-tv">
+            <li class="filter-tv__type">
+                <label>
+                    <input type="checkbox"/>
+                    <span class="filter-tv__type">Фильмы</span>
+                </label>
+            </li>
+            <li class="filter-tv__type">
+                <label>
+                    <input type="checkbox"/>
+                    <span class="filter-tv__type">Сериалы</span>
+                </label>
+            </li>
+            <li class="filter-tv__type">
+                <label>
+                    <input type="checkbox"/>
+                    <span class="filter-tv__type">Спорт</span>
+                </label>
+            </li>
+            <li class="filter-tv__type">
+                <label>
+                    <input type="checkbox"/>
+                    <span class="filter-tv__type">Детям</span>
+                </label>
+            </li>
+        </ul>
     </div>
 
     <div class="line"></div>
 
-    <div class="Mo">
-        <div class="chennels">
-            <div class="chennels__chennel">
+    <div class="hide-show show-monday">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/1_kanal.png">
                 <span>Первый канал</span>
             </div>
@@ -86,8 +99,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ntv.png">
                 <span>НТВ</span>
             </div>
@@ -125,8 +138,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ren.png">
                 <span>РЕН ТВ</span>
             </div>
@@ -164,8 +177,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/sts_2016.png">
                 <span>СТС</span>
             </div>
@@ -203,8 +216,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/tvc.png">
                 <span>ТВ ЦЕНТР</span>
             </div>
@@ -243,48 +256,48 @@
         </div>
     </div>
 
-    <div class="Tu">
-        <div class="chennels">
-            <div class="chennels__chennel">
+    <div class="hide-show show-tuesday">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/1_kanal.png">
                 <span>Первый канал</span>
             </div>
             <div>
             <ul type="none">
                 <li>
-                    <span class="programm-time">07:00</span>
-                    <span class="programm-name">Телекал "Доброе утро"</span>
+                    <span class="programm-time">06:00</span>
+                    <span class="programm-name">Новости</span>
                 </li>
                 <li>
-                    <span class="programm-time">11:00</span>
-                    <span class="programm-name">Модный приговор</span>
+                    <span class="programm-time">09:55</span>
+                    <span class="programm-name">Смешарики</span>
                 </li>
                 <li>
-                    <span class="programm-time">15:00</span>
-                    <span class="programm-name">Новости с субтитрами</span>
+                    <span class="programm-time">12:10</span>
+                    <span class="programm-name">Непутевые заметки</span>
                 </li>
                 <li>
-                    <span class="programm-time">19:10</span>
-                    <span class="programm-name">"Пусть говорят" с Андреем Малаховым</span>
+                    <span class="programm-time">13:50</span>
+                    <span class="programm-name">Гости по воскресеньям</span>
                 </li>
                 <li>
-                    <span class="programm-time">21:20</span>
-                    <span class="programm-name">Маргарита Назарова</span>
+                    <span class="programm-time">15:35</span>
+                    <span class="programm-name">Обнимая небо</span>
                 </li>
                 <li>
-                    <span class="programm-time">23:00</span>
-                    <span class="programm-name">Ночные новости</span>
+                    <span class="programm-time">18:45</span>
+                    <span class="programm-name">"Кллуб Веселых и Находчивых" Высшая лига</span>
                 </li>
                 <li>
-                    <span class="programm-time">01:15</span>
-                    <span class="programm-name">Фильм для взрослых</span>
+                    <span class="programm-time">21:15</span>
+                    <span class="programm-name">Воскресное время</span>
                 </li>
             </ul>
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ntv.png">
                 <span>НТВ</span>
             </div>
@@ -292,23 +305,23 @@
             <ul type="none">
                 <li>
                     <span class="programm-time">07:00</span>
-                    <span class="programm-name">Супруги (игра на выживание)</span>
+                    <span class="programm-name">Ржавчина</span>
                 </li>
                 <li>
-                    <span class="programm-time">11:00</span>
-                    <span class="programm-name">Суд присяжных</span>
+                    <span class="programm-time">11:05</span>
+                    <span class="programm-name">Чудо техники</span>
                 </li>
                 <li>
-                    <span class="programm-time">15:00</span>
-                    <span class="programm-name">Обзор. Чрезвычайное происшествие</span>
+                    <span class="programm-time">12:00</span>
+                    <span class="programm-name">Дачный ответ</span>
                 </li>
                 <li>
-                    <span class="programm-time">19:10</span>
-                    <span class="programm-name">Улицы разбитых фонарей</span>
+                    <span class="programm-time">13:10</span>
+                    <span class="programm-name">Наш потребНадзор</span>
                 </li>
                 <li>
-                    <span class="programm-time">21:20</span>
-                    <span class="programm-name">ЧПю Раследование</span>
+                    <span class="programm-time">15:05</span>
+                    <span class="programm-name">Своя игра</span>
                 </li>
                 <li>
                     <span class="programm-time">23:00</span>
@@ -322,8 +335,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ren.png">
                 <span>РЕН ТВ</span>
             </div>
@@ -361,8 +374,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/sts_2016.png">
                 <span>СТС</span>
             </div>
@@ -400,8 +413,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/tvc.png">
                 <span>ТВ ЦЕНТР</span>
             </div>
@@ -440,29 +453,29 @@
         </div>
     </div>
 
-    <div class="We">
-        <div class="chennels">
-            <div class="chennels__chennel">
+    <div class="hide-show show-wednesday">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/1_kanal.png">
                 <span>Первый канал</span>
             </div>
             <div>
             <ul type="none">
                 <li>
-                    <span class="programm-time">07:00</span>
+                    <span class="programm-time">05:00</span>
                     <span class="programm-name">Телекал "Доброе утро"</span>
                 </li>
                 <li>
                     <span class="programm-time">11:00</span>
-                    <span class="programm-name">Модный приговор</span>
+                    <span class="programm-name">Контрольная закупка</span>
                 </li>
                 <li>
-                    <span class="programm-time">15:00</span>
-                    <span class="programm-name">Новости с субтитрами</span>
+                    <span class="programm-time">15:35</span>
+                    <span class="programm-name">Давай поженимся</span>
                 </li>
                 <li>
                     <span class="programm-time">19:10</span>
-                    <span class="programm-name">"Пусть говорят" с Андреем Малаховым</span>
+                    <span class="programm-name">"Вечерние новости с субтитрами</span>
                 </li>
                 <li>
                     <span class="programm-time">21:20</span>
@@ -480,8 +493,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ntv.png">
                 <span>НТВ</span>
             </div>
@@ -493,11 +506,11 @@
                 </li>
                 <li>
                     <span class="programm-time">11:00</span>
-                    <span class="programm-name">Суд присяжных</span>
+                    <span class="programm-name">Возвращение Мухтара</span>
                 </li>
                 <li>
                     <span class="programm-time">15:00</span>
-                    <span class="programm-name">Обзор. Чрезвычайное происшествие</span>
+                    <span class="programm-name">Улицы разбитых фонарей</span>
                 </li>
                 <li>
                     <span class="programm-time">19:10</span>
@@ -505,7 +518,7 @@
                 </li>
                 <li>
                     <span class="programm-time">21:20</span>
-                    <span class="programm-name">ЧПю Раследование</span>
+                    <span class="programm-name">ЧП Раследование</span>
                 </li>
                 <li>
                     <span class="programm-time">23:00</span>
@@ -519,8 +532,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ren.png">
                 <span>РЕН ТВ</span>
             </div>
@@ -558,8 +571,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/sts_2016.png">
                 <span>СТС</span>
             </div>
@@ -597,8 +610,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/tvc.png">
                 <span>ТВ ЦЕНТР</span>
             </div>
@@ -637,16 +650,16 @@
         </div>
     </div>
 
-    <div class="Th">
-        <div class="chennels">
-            <div class="chennels__chennel">
+    <div class="hide-show show-thursday">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/1_kanal.png">
                 <span>Первый канал</span>
             </div>
             <div>
             <ul type="none">
                 <li>
-                    <span class="programm-time">07:00</span>
+                    <span class="programm-time">08:00</span>
                     <span class="programm-name">Телекал "Доброе утро"</span>
                 </li>
                 <li>
@@ -677,8 +690,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ntv.png">
                 <span>НТВ</span>
             </div>
@@ -716,8 +729,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ren.png">
                 <span>РЕН ТВ</span>
             </div>
@@ -755,8 +768,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/sts_2016.png">
                 <span>СТС</span>
             </div>
@@ -794,8 +807,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/tvc.png">
                 <span>ТВ ЦЕНТР</span>
             </div>
@@ -834,48 +847,48 @@
         </div>
     </div>
 
-    <div class="Fr">
-        <div class="chennels">
-            <div class="chennels__chennel">
+    <div class="hide-show show-friday">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/1_kanal.png">
                 <span>Первый канал</span>
             </div>
             <div>
             <ul type="none">
                 <li>
-                    <span class="programm-time">07:00</span>
+                    <span class="programm-time">06:00</span>
                     <span class="programm-name">Телекал "Доброе утро"</span>
                 </li>
                 <li>
-                    <span class="programm-time">11:00</span>
-                    <span class="programm-name">Модный приговор</span>
+                    <span class="programm-time">10:00</span>
+                    <span class="programm-name">Жить здорово</span>
                 </li>
                 <li>
-                    <span class="programm-time">15:00</span>
-                    <span class="programm-name">Новости с субтитрами</span>
+                    <span class="programm-time">15:40</span>
+                    <span class="programm-name">Время покажет</span>
                 </li>
                 <li>
-                    <span class="programm-time">19:10</span>
-                    <span class="programm-name">"Пусть говорят" с Андреем Малаховым</span>
+                    <span class="programm-time">18:50</span>
+                    <span class="programm-name">"Жди меня</span>
                 </li>
                 <li>
-                    <span class="programm-time">21:20</span>
-                    <span class="programm-name">Маргарита Назарова</span>
+                    <span class="programm-time">20:45</span>
+                    <span class="programm-name">Поле чудес</span>
                 </li>
                 <li>
-                    <span class="programm-time">23:00</span>
+                    <span class="programm-time">23:25</span>
                     <span class="programm-name">Ночные новости</span>
                 </li>
                 <li>
-                    <span class="programm-time">01:15</span>
-                    <span class="programm-name">Фильм для взрослых</span>
+                    <span class="programm-time">00:35</span>
+                    <span class="programm-name">Дневник слабака</span>
                 </li>
             </ul>
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ntv.png">
                 <span>НТВ</span>
             </div>
@@ -883,27 +896,27 @@
             <ul type="none">
                 <li>
                     <span class="programm-time">07:00</span>
-                    <span class="programm-name">Супруги (игра на выживание)</span>
+                    <span class="programm-name">Новое утро</span>
                 </li>
                 <li>
                     <span class="programm-time">11:00</span>
                     <span class="programm-name">Суд присяжных</span>
                 </li>
                 <li>
-                    <span class="programm-time">15:00</span>
+                    <span class="programm-time">14:45</span>
                     <span class="programm-name">Обзор. Чрезвычайное происшествие</span>
                 </li>
                 <li>
-                    <span class="programm-time">19:10</span>
-                    <span class="programm-name">Улицы разбитых фонарей</span>
+                    <span class="programm-time">15:55</span>
+                    <span class="programm-name">Отдел 44 (Сестры по крови)</span>
                 </li>
                 <li>
-                    <span class="programm-time">21:20</span>
-                    <span class="programm-name">ЧПю Раследование</span>
+                    <span class="programm-time">18:25</span>
+                    <span class="programm-name">Говорим и показываем с Леонидом Закошанским</span>
                 </li>
                 <li>
-                    <span class="programm-time">23:00</span>
-                    <span class="programm-name">Место встречи</span>
+                    <span class="programm-time">22:05</span>
+                    <span class="programm-name">Как всегда идут дожди</span>
                 </li>
                 <li>
                     <span class="programm-time">01:15</span>
@@ -913,8 +926,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ren.png">
                 <span>РЕН ТВ</span>
             </div>
@@ -952,8 +965,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/sts_2016.png">
                 <span>СТС</span>
             </div>
@@ -991,8 +1004,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/tvc.png">
                 <span>ТВ ЦЕНТР</span>
             </div>
@@ -1031,9 +1044,9 @@
         </div>
     </div>
 
-    <div class="Sa">
-        <div class="chennels">
-            <div class="chennels__chennel">
+    <div class="hide-show show-saturday">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/1_kanal.png">
                 <span>Первый канал</span>
             </div>
@@ -1071,8 +1084,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ntv.png">
                 <span>НТВ</span>
             </div>
@@ -1110,8 +1123,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ren.png">
                 <span>РЕН ТВ</span>
             </div>
@@ -1149,8 +1162,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/sts_2016.png">
                 <span>СТС</span>
             </div>
@@ -1188,8 +1201,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/tvc.png">
                 <span>ТВ ЦЕНТР</span>
             </div>
@@ -1228,9 +1241,9 @@
         </div>
     </div>
 
-    <div class="Su">
-        <div class="chennels">
-            <div class="chennels__chennel">
+    <div class="hide-show show-sunday">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/1_kanal.png">
                 <span>Первый канал</span>
             </div>
@@ -1268,8 +1281,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ntv.png">
                 <span>НТВ</span>
             </div>
@@ -1307,8 +1320,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/ren.png">
                 <span>РЕН ТВ</span>
             </div>
@@ -1346,8 +1359,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/sts_2016.png">
                 <span>СТС</span>
             </div>
@@ -1385,8 +1398,8 @@
             </div>
         </div>
 
-        <div class="chennels">
-            <div class="chennels__chennel">
+        <div class="channels">
+            <div class="channel">
                 <img src="img/tvc.png">
                 <span>ТВ ЦЕНТР</span>
             </div>
@@ -1426,6 +1439,7 @@
     </div>
 
 
+   <script src="js/main.js"></script>
 
     </body>
 </html>

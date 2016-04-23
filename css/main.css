@@ -183,26 +183,35 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.days {
-    cursor: pointer;
-    margin: 2px;
-    padding: 2px 3px;
-}
-
-.wrapper {
-    margin: 0 auto;
+.filter-days {
     display: inline-block;
 }
 
-.tv-filter {
+.filter-days__day {
+    display: inline-block;
+    transition: width .3s ease-in-out
+}
+
+/*.wrapper {
+    margin: 0 auto;
+    display: inline-block;
+}*/
+
+.filter-tv {
     float: right;
+    margin-right: 40px;
+}
+
+.filter-tv__type {
+    display: inline-block;
+    cursor: pointer;
 }
 
 .block-menu {
     margin-bottom: 30px;
 }
 
-.chennels {
+.channels {
     display: inline-block;
     width: 280px;
     vertical-align: top;
@@ -226,6 +235,40 @@ textarea {
     margin-bottom: 30px;
 }
 
-.chennels__chennel {
+.channel {
     padding-left: 40px;
+    text-shadow: 3px 3px 3px #000;
+}
+
+.show-tuesday {
+    display: none;
+}
+
+.show-wednesday {
+    display: none;
+}
+
+.show-thursday {
+    display: none;
+}
+
+.show-friday {
+    display: none;
+}
+
+.show-saturday {
+    display: none;
+}
+
+.show-sunday {
+    display: none;
+}
+
+.programm-name:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.nkjh:hover {
+    color: red;
 }
