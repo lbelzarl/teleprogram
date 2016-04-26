@@ -183,8 +183,35 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.show {
+    color: blue;
+}
+
+.shadow {
+    color: #bfbfbf;
+}
+
+body {
+    background-color: #BFBFBF;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #F7F7F7;
+    box-shadow: 0px 4px 20px 0px #000;
+}
+
+.title {
+    margin: 0px;
+}
+
 .filter-days {
     display: inline-block;
+    font-size: 18px;
+    padding-left: 0px;
 }
 
 .filter-days__day {
@@ -192,19 +219,18 @@ textarea {
     transition: width .3s ease-in-out
 }
 
-/*.wrapper {
-    margin: 0 auto;
-    display: inline-block;
-}*/
-
 .filter-tv {
     float: right;
-    margin-right: 40px;
+    font-size: 18px;
+    padding-left: 0px;
 }
 
-.filter-tv__type {
+.filter-tv__list {
     display: inline-block;
-    cursor: pointer;
+}
+
+.tv-genres {
+    cursor: pointer;    
 }
 
 .block-menu {
@@ -218,12 +244,12 @@ textarea {
     margin-bottom: 10px;
 }
 
-.programm-name {
+.programm__name {
     display: block;
     padding-left: 60px;
 }
 
-.programm-time {
+.programm__time {
     position: absolute;
 }
 
@@ -236,39 +262,85 @@ textarea {
 }
 
 .channel {
-    padding-left: 40px;
-    text-shadow: 3px 3px 3px #000;
+    text-shadow: 1px 1px 2px #000;
 }
 
-.show-tuesday {
+.hide-show {
     display: none;
 }
 
-.show-wednesday {
-    display: none;
+.show-monday {
+    display: block;
 }
 
-.show-thursday {
-    display: none;
-}
-
-.show-friday {
-    display: none;
-}
-
-.show-saturday {
-    display: none;
-}
-
-.show-sunday {
-    display: none;
-}
-
-.programm-name:hover {
+.programm__name:hover {
     color: red;
     cursor: pointer;
 }
 
-.nkjh:hover {
+.programm__popup {
+    display: none;
+
+    position: absolute;
+    left: 100%;
+    top: -200px;
+    width: 257px;
+    height: auto;
+
+    padding: 5px 10px;
+
+    z-index: 5;
+
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 5px 0px #000;
+}
+
+.programm {
+    position: relative;
+}
+
+.programm:hover .programm__popup {
+    display: block;
+}
+
+.filter-days__link {
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.filter-days__link:hover {
+    border-bottom: 3px solid red;
+}
+
+.active {
     color: red;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+    border-bottom: 3px solid red;
+}
+
+@media (min-width: 850px) {
+    .channels {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .channels {
+        width: 25%;
+    }
+}
+
+.programms {
+    padding-left: 0px;
+}
+
+.popup__info {
+    display: block;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+.popup__title {
+    margin: 0px 0px 3px 0px;
 }
