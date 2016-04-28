@@ -22,25 +22,37 @@ document.querySelector('.filter-days').addEventListener('click', function(e) {
     }
 });
 
-// TODO  переделать
-/*document.querySelector('.filter-tv').addEventListener('click', function(e) {
-    if (/////////TODO)) {
-        document.querySelector('.hide-show').classList.add('shadow');
+// Затеняем все передачи и выделяем отмеченные фльтром 
+document.querySelector('.filter-tv').addEventListener('change', function(e) {
+    var genre = e.target.value,
+        genres = document.querySelectorAll('.programm'),
+        input = document.querySelectorAll('.tv-genres__check'),
+        checked = [];
 
-        var checked = document.querySelectorAll('.tv-genres__check');
-
-        for (var i = 0; i < checked.length; i++) {
-            if (checked[i].checked) {
-                var genre = checked[i].value;
+    // Итерируемся по все программам и при сключении фильтра выделяем.
+    for (var i = 0; i < genres.length; i++) {
+        if ( genre === genres[i].getAttribute('data-genre') ) {
+            if (e.target.checked) {
+                genres[i].classList.add('show');
+                continue;
             }
 
-            var genres = document.querySelectorAll('.programm');
-
-            for (var i = 0; i < genres.length; i++) {
-                if ( genre === genres[i].getAttribute('data-genre') ) {
-                    genres[i].classList.add('show');
-                }
-            }
+            genres[i].classList.remove('show');
         }
     }
-})*/
+
+    // 
+    for (var i = 0; i < input.length; i++) {
+        if ( input[i].checked) {
+            checked.push(input[i].value);
+            break;
+        }
+    }
+
+    if (checked.length) {
+        document.querySelector('.hide-show').classList.add('shadow');
+        return;    
+    }
+
+    document.querySelector('.hide-show').classList.remove('shadow');
+});
