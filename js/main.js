@@ -50,9 +50,9 @@ document.querySelector('.filter-tv').addEventListener('change', function(e) {
     }
 
     if (checked.length) {
-        document.querySelector('.hide-show').classList.add('shadow');
+        document.querySelector('.week').classList.add('shadow');
         return;    
     }
 
-    document.querySelector('.hide-show').classList.remove('shadow');
+    document.querySelector('.week').classList.remove('shadow');
 });
